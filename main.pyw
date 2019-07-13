@@ -30,7 +30,7 @@ def on_press(key):
     if key == Key.esc:
         #flush_input()    # works only on windows
         return False
-    elif key == Key.space or key == Key.tab:
+    elif key == Key.space or key == Key.tab:  # save with word .
         logger.info(word)
         word = ''   # clear it for next the word.
     else:
